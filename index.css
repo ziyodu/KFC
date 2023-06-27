@@ -1,0 +1,61 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+nav {
+  width: 100%;
+  height: 120px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: crimson;
+  color: azure;
+  margin-bottom: 100px;
+
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+.parent{
+    width: 100%;
+    padding: 0 100px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+   
+}
+
+.card1{
+    width: 100%;
+    border: solid 1px grey;
+    text-align: center;
+    border-radius: 20px;
+    padding: 20px;
+}
+.card1 img{
+    width: 100%;
+    
+    border-radius: 20px;
+}
+.card1 button{
+    color: black;
+    width: 184px;
+    height: 52px;
+    border-radius: 20px;
+    background: #fff;
+    border: 2px solid crimson;
+    font-size: 18px; 
+}
+
+.card1 button:hover {
+    background-color: crimson;
+    color: #fff;
+    transition: 1s;
+}
